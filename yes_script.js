@@ -1,5 +1,5 @@
 // Love Timer (Set the date you both met)
-const startDate = new Date("2023-03-01"); // Change this to your actual date
+const startDate = new Date("2024-06-09"); // Change this to your actual date
 
 function updateTimer() {
     const now = new Date();
