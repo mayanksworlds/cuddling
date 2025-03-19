@@ -1,0 +1,99 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #ff758c, #ff7eb3);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    animation: bgChange 10s infinite alternate;
+}
+
+/* Background Color Transition */
+@keyframes bgChange {
+    0% { background: #ff758c; }
+    50% { background: #ff7eb3; }
+    100% { background: #ff96a9; }
+}
+
+/* Glowing Love Text */
+.glow-text {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 0 10px #ff6b81, 0 0 20px #ff4757;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #ff6b81; }
+    to { text-shadow: 0 0 20px #ff4757; }
+}
+
+/* Romantic Message */
+.romantic-text {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Love Button */
+.love-button {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.love-button:hover {
+    background: #ff6b81;
+}
+
+/* Surprise Love Letter */
+#love-letter {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.couple-img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 15px;
+}
+
+/* Falling Hearts */
+.heart {
+    position: absolute;
+    font-size: 24px;
+    color: red;
+    opacity: 0.8;
+    animation: fall 4s linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-50px) scale(1); opacity: 1; }
+    100% { transform: translateY(100vh) scale(1.5); opacity: 0; }
+}
+
+/* Cursor-Following Heart */
+#cursor-heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.05s linear;
+}
